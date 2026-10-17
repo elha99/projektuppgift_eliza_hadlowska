@@ -1,0 +1,43 @@
+/*Header*/
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5em;
+}
+
+.header-container img {
+    width: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 1.4em;
+    padding: 15px;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(209, 206, 206);
+    border-radius: 10px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a:hover {
+    color: grey;
+}
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
