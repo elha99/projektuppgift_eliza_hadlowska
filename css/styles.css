@@ -1,43 +1,111 @@
 /*Header*/
+
 .header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    font-size: 1.5em;
+    color: #1E3A8A;
 }
 
 .header-container img {
-    width: 30px;
+    height: 25px;
+    width: auto;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
-    font-size: 1.4em;
-    padding: 15px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 1.2em;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #1E3A8A;
+}
+
+header nav ul a:hover {
+    color: grey;
+}
+
+.boka-button {
+    background-color: #FBBF24;
+    color: #1E3A8A;
+    text-decoration: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/*Hero*/
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #1E3A8A;
+}
+
+/**/
+
+@media (min-width: 768px){
+/**/
+/* header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+header .header-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1E3A8A;
+}
+
+.header-container img {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+header nav ul {
+    list-style-type: none;
     gap: 50px;
     display: flex;
     flex-direction: row;
-    background-color: rgb(209, 206, 206);
-    border-radius: 10px;
 }
 
-nav ul a {
+header nav ul a {
     text-decoration: none;
     color: black;
 }
 
-nav ul a:hover {
+header nav ul a:hover {
     color: grey;
 }
 
+.boka-button {
+    background-color: #FBBF24;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+} */
+
 /**/
 
-
-/**/
-
-
-/**/
-
-
-/**/
+}
