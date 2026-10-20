@@ -81,13 +81,75 @@ header nav ul a:hover {
     
 }
 
-/**/
+/*Om verksamheten*/
+.about img {
+    width: 100px;
+}
 
-/**/
+.about {
+    display: grid;
 
-/**/
+}
 
-/**/
+/*Footer*/
+footer {
+    background-color: rgba(119, 194, 255, 0.342);
+    color: #1E3A8A;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-size: 1.2em
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #1E3A8A;
+    font-size: 1.5em;
+}
+
+.footer-logo img {
+    height: 25px;
+    width: auto;
+}
+
+.footer-kontakt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-kontakt a {
+    text-decoration: none;
+    color: #1E3A8A;
+    margin-left: 10px;
+}
+
+.footer-lankar a {
+    text-decoration: none;
+    color: #1E3A8A;
+}
+
+.footer-lankar nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: left;
+    gap: 8px;
+} 
+
+.footer-lankar ul {
+    margin-left: 10px;
+    padding-left: 0;
+}
+
+.footer-oppettider p {
+    margin-left: 10px;
+}
 
 @media (min-width: 768px){
 /**/
@@ -138,5 +200,7 @@ header nav ul a:hover {
 } */
 
 /**/
+
+
 
 }
