@@ -88,7 +88,6 @@ header nav ul a:hover {
 
 .about {
     display: grid;
-
 }
 
 /*Footer*/
@@ -149,6 +148,15 @@ footer h5 {
 
 .footer-oppettider p {
     margin-left: 10px;
+}
+
+footer .boka-button {
+    background-color: #FBBF24;
+    color: #1E3A8A;
+    text-decoration: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 @media (min-width: 768px){
