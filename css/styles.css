@@ -199,7 +199,32 @@ footer .boka-button {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/**/
+/*KONTAKT HTML*/
+.form-text {
+    color: #1E3A8A;
+}
+
+form {
+    padding: 20px;
+    color: black;
+}
+
+input, textarea, select {
+    padding: 6px 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #1E3A8A;
+    box-shadow: 0 0 0 4px rgba(10, 53, 95, 0.253)
+}
+
+label {
+    display: block;
+    margin: 8px;
+}
 
 @media (min-width: 768px){
 /**/
