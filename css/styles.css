@@ -62,6 +62,7 @@ header nav ul a:hover {
 .security-stamps {
     display: flex;
     background-color: rgba(119, 194, 255, 0.342);
+    padding: 20px;
 }
 
 .security-stamps h3 {
@@ -78,16 +79,13 @@ header nav ul a:hover {
 
 .shield-image img, .heart-image img, .paw-image img {
     width: 50px;
-    
 }
 
 /*Om verksamheten*/
-.about img {
-    width: 100px;
-}
-
 .about {
-    display: grid;
+    color: #1e3b8a;
+    padding: 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.658)), url(../images/Min_profilbild.jpg);
 }
 
 /*Footer*/
@@ -158,6 +156,50 @@ footer .boka-button {
     box-sizing: border-box;
     padding: 5px;
 }
+
+/*HUNDPENSIONATET HTML*/
+.background {
+    color: #1e3b8a;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.541)), url(../images/backgrounddog.avif);
+}
+
+.gallery-container {
+  position: relative;
+  width: 100%; 
+  margin: auto;
+  overflow: hidden;
+}
+
+.gallery-slide img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.gallery-slide img.active {
+  display: block;
+}
+
+/*Knapparna för galleriet*/
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 13px;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/**/
 
 @media (min-width: 768px){
 /**/
