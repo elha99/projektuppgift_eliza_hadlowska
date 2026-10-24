@@ -1,5 +1,18 @@
 /*Header*/
 
+.menu {
+    display: none;
+    width: 100%;
+}
+
+.menu.open {
+    display: block;
+}
+
+.menu-toggle {
+    display: block;
+}
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -227,7 +240,21 @@ label {
 }
 
 @media (min-width: 768px){
-/**/
+/*Header*/
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        width: auto;
+    }
+
+    .menu ul {
+        display: flex;
+        gap: 20px;
+    }
 /* header {
     display: flex;
     justify-content: space-around;
