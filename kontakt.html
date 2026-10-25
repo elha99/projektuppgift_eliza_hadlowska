@@ -25,77 +25,78 @@
                 </ul>
             </nav>
     </header>
-    <!--Kontaktformulär-->
-    <section>
-        <div class="form-text">
-            <h2>Bokning och bokningsvillkor</h2>
-            <p> Betalningen sker på incheckningsdagen, antingen kontant eller via swish. Du skall ha giltigt vaccinationsintyg för bland annat kennelhosta, valpsjuka, 
-                parvo samt  leverinflammation HCC (dhp) samt försäkringspapper med dig på incheckningsdagen. Hunden skall vara försäkrad, ID-märkt och vara fullt frisk 
-                på incheckningsdagen. Vi står inte för hundmat därför ska du ha med dig mat till hunden så det räcker över hela vistelsen och eventuellt godis ifall
-                hunden är känslig eller allergisk. Vi har lite olika typer av godis och tuggben som vi bjuder på under vistelsen ifall du är okej med det. 
+    <main>
+        <!--Kontaktformulär-->
+        <section>
+            <div class="form-text">
+                <h2>Bokning och bokningsvillkor</h2>
+                <p> Betalningen sker på incheckningsdagen, antingen kontant eller via swish. Du skall ha giltigt vaccinationsintyg för bland annat kennelhosta, valpsjuka, 
+                    parvo samt  leverinflammation HCC (dhp) samt försäkringspapper med dig på incheckningsdagen. Hunden skall vara försäkrad, ID-märkt och vara fullt frisk 
+                    på incheckningsdagen. Vi står inte för hundmat därför ska du ha med dig mat till hunden så det räcker över hela vistelsen och eventuellt godis ifall
+                    hunden är känslig eller allergisk. Vi har lite olika typer av godis och tuggben som vi bjuder på under vistelsen ifall du är okej med det. 
+                </p>
+                <p>Kontaktfomruläret är en preliminär bokning, men bör fyllas i av ägare vars hundar inte vistats hos oss tidigare. 
+                    Jag kommer kontakta dig för att bekräfta bokningen.</p>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>Kontaktformulär</legend>
+                    <label for="antal-hundar">Antal hundar:</label>
+                    <select id="antal-hundar" name="antal-hundar" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+                    <label for="dogname">Hundens namn:</label>
+                    <input type="text" id="dogname" name="dogname" required>
+                    <br>
+                    <label for="gender">Kön:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="hane">Hane</option>
+                        <option value="tik">Tik</option>
+                        <option value="blandat">Både och</option>
+                    </select>
+                    <br>
+                    <label for="chipnr">Chipnummer:</label>
+                    <input type="number" id="chipnr" name="chipnr" required>
+                    <br>
+                    <label for="vaccination">Senaste vaccination:</label>
+                    <input type="date" id="vaccination" name="vaccination" required>
+                    <br>
+                    <label for="incheckning">Incheckningsdatum:</label>
+                    <input type="date" id="incheckning" name="incheckning" required>
+                    <br>
+                    <label for="utcheckning">Utcheckningsdatum:</label>
+                    <input type="date" id="utcheckning" name="utcheckning" required>
+                    <br>
+                    <label for="message">Önskemål:</label>
+                    <textarea type="text" placeholder="Exempelvis mediciner eller speciella tidpunkter" id="message" name="message"></textarea>
+                    <br>
+                    <label for="humanname">För- och efternamn:</label>
+                    <input type="text" id="humanname" name="humanname" required>
+                    <br>
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="phone">Telefonnummer:</label>
+                    <input type="number" id="phone" name="phone" required>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="villkor">
+                        Jag godkänner villkoren
+                    </label>
+                </fieldset>
+                <button type="submit">Skicka</button>
+            </form>
+            <p>
+                Ni kan även nå mig via e-post på <a href="mailto:hotelltass@mail.com">hotelltass@mail.com</a> eller på telefon <a href="tel:0701234567">0701234567</a>
+                ifall det är brådskande eller ifall hunden har vistats hos oss förut. 
             </p>
-            <p>Kontaktfomruläret är en preliminär bokning, men bör fyllas i av ägare vars hundar inte vistats hos oss tidigare. 
-                Jag kommer kontakta dig för att bekräfta bokningen.</p>
-        </div>
-        <form>
-            <fieldset>
-                <legend>Kontaktformulär</legend>
-                <label for="antal-hundar">Antal hundar:</label>
-                <select id="antal-hundar" name="antal-hundar" required>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <br>
-                <label for="dogname">Hundens namn:</label>
-                <input type="text" id="dogname" name="dogname" required>
-                <br>
-                <label for="gender">Kön:</label>
-                <select id="gender" name="gender" required>
-                    <option value="hane">Hane</option>
-                    <option value="tik">Tik</option>
-                    <option value="blandat">Både och</option>
-                </select>
-                <br>
-                <label for="chipnr">Chipnummer:</label>
-                <input type="number" id="chipnr" name="chipnr" required>
-                <br>
-                <label for="vaccination">Senaste vaccination:</label>
-                <input type="date" id="vaccination" name="vaccination" required>
-                <br>
-                <label for="incheckning">Incheckningsdatum:</label>
-                <input type="date" id="incheckning" name="incheckning" required>
-                <br>
-                <label for="utcheckning">Utcheckningsdatum:</label>
-                <input type="date" id="utcheckning" name="utcheckning" required>
-                <br>
-                <label for="message">Önskemål:</label>
-                <textarea type="text" placeholder="Exempelvis mediciner eller speciella tidpunkter" id="message" name="message"></textarea>
-                <br>
-                <label for="humanname">För- och efternamn:</label>
-                <input type="text" id="humanname" name="humanname" required>
-                <br>
-                <label for="email">E-post:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <label for="phone">Telefonnummer:</label>
-                <input type="number" id="phone" name="phone" required>
-                <br>
-                <label>
-                    <input type="checkbox" name="villkor">
-                    Jag godkänner villkoren
-                </label>
-            </fieldset>
-            <button type="submit">Skicka</button>
-        </form>
-        <p>
-            Ni kan även nå mig via e-post på <a href="mailto:hotelltass@mail.com">hotelltass@mail.com</a> eller på telefon <a href="tel:0701234567">0701234567</a>
-            ifall det är brådskande eller ifall hunden har vistats hos oss förut. 
-        </p>
-    </section>
-    
+        </section>
+    </main>
     <footer>
         <div class="footer-logo">
             <img src="images/tass_logo.png" alt="Hotell Tass logo i form av en tass">
@@ -112,8 +113,7 @@
                 <ul>
                     <li><a href="index.html">Startsida</a></li>
                     <li><a href="hundpensionatet.html">Hundpensionatet</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="#" class="boka-button">Boka vistelse</a></li>
+                    <li><a href="kontakt.html" class="boka-button">Boka vistelse</a></li>
                 </ul>
             </nav>
         </div>

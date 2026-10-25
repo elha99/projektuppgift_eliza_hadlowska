@@ -5,12 +5,20 @@
     width: 100%;
 }
 
+.menu a {
+    border-bottom: 1px solid;
+}
+
 .menu.open {
     display: block;
 }
 
 .menu-toggle {
     display: block;
+}
+
+header {
+    background-color: rgba(119, 194, 255, 0.342);
 }
 
 .header-container {
@@ -28,7 +36,6 @@
 
 header nav ul {
     list-style-type: none;
-    background-color: rgba(119, 194, 255, 0.342);
     padding: 20px;
     gap: 20px;
     display: flex;
@@ -78,6 +85,30 @@ header nav ul a:hover {
     padding: 20px;
 }
 
+.shield-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.heart-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.paw-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
 .security-stamps h3 {
     font-size: 1rem;
     font-weight: bold;
@@ -96,9 +127,33 @@ header nav ul a:hover {
 
 /*Om verksamheten*/
 .about {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    align-items: center;
     color: #1e3b8a;
-    padding: 20px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.658)), url(../images/Min_profilbild.jpg);
+}
+
+.about h3 {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 30px;
+    font-size: bold;
+}
+
+.about img {
+    grid-column: 2;
+    grid-row: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+}
+
+.about p {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    font-size: 20px;
+    text-align: center;
 }
 
 /*Footer*/
@@ -240,7 +295,12 @@ label {
 }
 
 @media (min-width: 768px){
-/*Header*/
+    header, main, footer {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /*Header*/
 
     .menu-toggle {
         display: none;
@@ -251,58 +311,204 @@ label {
         width: auto;
     }
 
+    .menu a {
+        border-bottom: none;
+    }
+
     .menu ul {
         display: flex;
         gap: 20px;
     }
-/* header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    font-size: 1.5em;
-}
 
-header .header-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #1E3A8A;
-}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5em;
+        background-color: rgba(119, 194, 255, 0.342);
+    }
 
-.header-container img {
-    display: block;
-    height: 40px;
-    width: auto;
-}
+    header .header-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #1E3A8A;
+    }
 
-header nav ul {
-    list-style-type: none;
-    gap: 50px;
-    display: flex;
-    flex-direction: row;
-}
+    .header-container img {
+        height: 40px;
+        width: auto;
+    }   
 
-header nav ul a {
-    text-decoration: none;
-    color: black;
-}
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        
+    }
 
-header nav ul a:hover {
-    color: grey;
-}
+    header nav ul a {
+        text-decoration: none;
+        color: #1E3A8A;
+    }
 
-.boka-button {
-    background-color: #FBBF24;
-    color: black;
-    text-decoration: none;
-    border-radius: 20px;
-    padding: 15px;
-    margin: 20px;
-} */
+    header nav ul a:hover {
+        color: grey;
+    }
 
-/**/
+    .boka-button {
+        background-color: #FBBF24;
+        color: black;
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 15px;
+        margin: 20px;
+} 
 
+    /*Hero*/
 
+    .hero {
+        position: absolute;
+        top: 30%;           
+        left: 20%;
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: rgba(172, 172, 172, 0.445);
+    }
+
+    /*Varför välja oss-sektion*/
+    .security-stamps {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(119, 194, 255, 0.342);
+
+    }
+
+    .security-stamps h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 5px;
+    }       
+
+    .security-stamps p {
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin: 5px;
+    }
+
+    .shield-image img, .heart-image img, .paw-image img {
+        width: 80px;
+    }
+
+    /*Om verksamheten*/
+    .about {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        align-items: center;
+        color: #1e3b8a;
+    }
+
+    .about h3 {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 30px;
+        font-size: bold;
+    }
+
+    .about img {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        width: 250px;
+        height: 250px;
+        border-radius: 30%;
+    }
+
+    .about p {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*Footer*/
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        color: #1E3A8A;
+        font-size: 40px;
+    }
+
+    .footer-logo img {
+        height: 40px;
+        width: auto;
+    }
+
+    footer h5 {
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+
+    .footer-kontakt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-kontakt a {
+        text-decoration: none;
+        color: #1E3A8A;
+        margin-left: 10px;
+    }
+
+    .footer-lankar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-lankar a {
+        text-decoration: none;
+        color: #1E3A8A;
+    }
+
+    .footer nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-lankar nav ul {
+        list-style-type: none;
+        gap: 8px;
+    } 
+
+    .footer-oppettider p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .boka-button {
+        background-color: #FBBF24;
+        color: #1E3A8A;
+        text-decoration: none;
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 5px;
+        margin: 10px;
+    }
 
 }
