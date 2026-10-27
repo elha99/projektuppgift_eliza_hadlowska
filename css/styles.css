@@ -317,6 +317,11 @@ label {
     margin: 8px;
 }
 
+#errorList {
+    color: red;
+    font-weight: bold;
+}
+
 /*Visning med en storskärm*/
 @media (min-width: 768px){
     /*Gör innehållet lite mindre än skärmen så allt inte blir så utsmetat*/

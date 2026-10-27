@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
+    <script src="js/kontakt.js" defer></script>
     <title>Hotell Tass</title>
 </head>
 
@@ -40,11 +41,12 @@
                 <p>Kontaktformuläret är en preliminär bokning, men bör fyllas i av ägare vars hundar inte vistats hos oss tidigare. 
                     Jag kommer kontakta dig för att bekräfta bokningen.</p>
             </div>
-            <form>
+            <ul id="errorList"></ul>
+            <form id="kontaktform">
                 <fieldset>
                     <legend>Kontaktformulär</legend>
                     <label for="antal-hundar">Antal hundar:</label>
-                    <select id="antal-hundar" name="antal-hundar" required>
+                    <select id="antal-hundar" name="antal-hundar">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -53,41 +55,41 @@
                     </select>
                     <br>
                     <label for="dogname">Hundens namn:</label>
-                    <input type="text" id="dogname" name="dogname" required>
+                    <input type="text" id="dogname" name="dogname">
                     <br>
                     <label for="gender">Kön:</label>
-                    <select id="gender" name="gender" required>
+                    <select id="gender" name="gender">
                         <option value="hane">Hane</option>
                         <option value="tik">Tik</option>
                         <option value="blandat">Både och</option>
                     </select>
                     <br>
                     <label for="chipnr">Chipnummer:</label>
-                    <input type="number" id="chipnr" name="chipnr" required>
+                    <input type="number" id="chipnr" name="chipnr">
                     <br>
                     <label for="vaccination">Senaste vaccination:</label>
-                    <input type="date" id="vaccination" name="vaccination" required>
+                    <input type="date" id="vaccination" name="vaccination">
                     <br>
                     <label for="incheckning">Incheckningsdatum:</label>
-                    <input type="date" id="incheckning" name="incheckning" required>
+                    <input type="date" id="incheckning" name="incheckning">
                     <br>
                     <label for="utcheckning">Utcheckningsdatum:</label>
-                    <input type="date" id="utcheckning" name="utcheckning" required>
+                    <input type="date" id="utcheckning" name="utcheckning">
                     <br>
                     <label for="message">Önskemål:</label>
                     <textarea type="text" placeholder="Exempelvis mediciner eller speciella tidpunkter" id="message" name="message"></textarea>
                     <br>
                     <label for="humanname">För- och efternamn:</label>
-                    <input type="text" id="humanname" name="humanname" required>
+                    <input type="text" id="humanname" name="humanname">
                     <br>
                     <label for="email">E-post:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email">
                     <br>
                     <label for="phone">Telefonnummer:</label>
-                    <input type="number" id="phone" name="phone" required>
+                    <input type="number" id="phone" name="phone">
                     <br>
                     <label>
-                        <input type="checkbox" name="villkor">
+                        <input type="checkbox" id="villkor" name="villkor">
                         Jag godkänner villkoren
                     </label>
                 </fieldset>
