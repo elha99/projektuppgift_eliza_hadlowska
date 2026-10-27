@@ -1,5 +1,10 @@
-/*Header*/
+/*Gör att bakgrunden blir ljusblå även om skärmen är större än de angivna måtten*/
+body {
+    background-color: rgba(119, 194, 255, 0.342);
+}
 
+/*Header*/
+/*Hamburgermenyn*/
 .menu {
     display: none;
     width: 100%;
@@ -17,6 +22,7 @@
     display: block;
 }
 
+/*Navigationsfältet längst upp på sidan*/
 header {
     background-color: rgba(119, 194, 255, 0.342);
 }
@@ -40,7 +46,6 @@ header nav ul {
     gap: 20px;
     display: flex;
     flex-direction: column;
-    align-items: left;
     font-size: 1.2em;
 }
 
@@ -138,7 +143,6 @@ header nav ul a:hover {
     grid-column: 1;
     grid-row: 1;
     font-size: 30px;
-    font-size: bold;
 }
 
 .about img {
@@ -203,7 +207,6 @@ footer h5 {
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    align-items: left;
     gap: 8px;
 } 
 
@@ -226,13 +229,16 @@ footer .boka-button {
 }
 
 /*HUNDPENSIONATET HTML*/
+/*Första texten om hundpensionatet*/
 .background {
     color: #1e3b8a;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.541)), url(../images/backgrounddog.avif);
+    background-image: url(../images/backgrounddog.avif);
 }
 
+/*Bildgalleriet*/
 .gallery-container {
   position: relative;
+  color: #1E3A8A;
   width: 100%; 
   margin: auto;
   overflow: hidden;
@@ -242,6 +248,8 @@ footer .boka-button {
   width: 100%;
   height: auto;
   display: none;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .gallery-slide img.active {
@@ -268,6 +276,7 @@ footer .boka-button {
 }
 
 /*KONTAKT HTML*/
+/*Formuläret*/
 .form-text {
     color: #1E3A8A;
 }
@@ -275,6 +284,20 @@ footer .boka-button {
 form {
     padding: 20px;
     color: black;
+    background-color: white;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+    
+legend {
+    font-size: 30px;
+    border-bottom: 3px solid black;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 input, textarea, select {
@@ -294,14 +317,16 @@ label {
     margin: 8px;
 }
 
+/*Visning med en storskärm*/
 @media (min-width: 768px){
+    /*Gör innehållet lite mindre än skärmen så allt inte blir så utsmetat*/
     header, main, footer {
         max-width: 1400px;
         margin: 0 auto;
     }
 
     /*Header*/
-
+    /*Hamburgermenyn*/
     .menu-toggle {
         display: none;
     }
@@ -320,6 +345,7 @@ label {
         gap: 20px;
     }
 
+    /*Navigeringsfältet längst upp på sidan*/
     header {
         display: flex;
         justify-content: space-between;
@@ -345,7 +371,6 @@ label {
         display: flex;
         flex-direction: row;
         gap: 20px;
-        
     }
 
     header nav ul a {
@@ -367,7 +392,6 @@ label {
 } 
 
     /*Hero*/
-
     .hero {
         position: absolute;
         top: 30%;           
@@ -415,7 +439,6 @@ label {
         grid-column: 1;
         grid-row: 1;
         font-size: 30px;
-        font-size: bold;
     }
 
     .about img {
@@ -492,7 +515,8 @@ label {
 
     .footer-lankar nav ul {
         list-style-type: none;
-        gap: 8px;
+        gap: 10px;
+        margin-top: 2px;
     } 
 
     .footer-oppettider p {
@@ -511,4 +535,68 @@ label {
         margin: 10px;
     }
 
+    footer p {
+        text-align: center;
+    }
+
+    /*HUNDPENSIONATET HTML*/
+    /*Första texten på sidan med en bakgrundbild på en vovve*/
+    .background {
+        color: #1e3b8a;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.63), rgba(255, 255, 255, 0.466)),url(../images/backgrounddog.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 400px;
+    }
+
+    /*Bildgalleriet*/
+    .gallery-container {
+        color: #1E3A8A;
+        position: relative;
+        max-width: 1000px; 
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .gallery-slide img {
+        max-width: 1000px;
+        height: auto;
+        display: none;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    /*KONTAKT HTML*/
+    /*Formuläret*/
+    .form-text {
+        color: #1E3A8A;
+    }
+
+    form {
+        padding: 20px;
+        color: black;
+        max-width: 600px;
+        background-color: white;
+        margin: 0 auto;
+        border: 2px solid black;
+    }
+
+    input, textarea, select {
+        padding: 6px 12px;
+        border: 1px solid black;
+        font-size: 16px;
+    }
+
+    input:focus, textarea:focus, select:focus {
+        border-color: #1E3A8A;
+        box-shadow: 0 0 0 4px rgba(10, 53, 95, 0.253)
+    }
+
+    label {
+        display: block;
+        margin: 8px;
+    }
 }
