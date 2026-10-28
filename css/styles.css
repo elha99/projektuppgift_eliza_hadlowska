@@ -1,0 +1,614 @@
+/*Gör att bakgrunden blir ljusblå även om skärmen är större än de angivna måtten*/
+body {
+    background-color: rgba(119, 194, 255, 0.342);
+}
+
+/*Header*/
+/*Hamburgermenyn*/
+.menu {
+    display: none;
+    width: 100%;
+}
+
+.menu a {
+    border-bottom: 1px solid;
+}
+
+.menu.open {
+    display: block;
+}
+
+.menu-toggle {
+    display: block;
+}
+
+/*Navigationsfältet längst upp på sidan*/
+header {
+    background-color: rgba(119, 194, 255, 0.342);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #1E3A8A;
+}
+
+.header-container img {
+    height: 25px;
+    width: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #1E3A8A;
+}
+
+header nav ul a:hover {
+    color: grey;
+}
+
+.boka-button {
+    background-color: #FBBF24;
+    color: #1E3A8A;
+    text-decoration: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/*Hero*/
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  object-position: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #1E3A8A;
+}
+
+/*Varför välja oss-sektion*/
+.security-stamps {
+    display: flex;
+    background-color: rgba(119, 194, 255, 0.342);
+    padding: 20px;
+}
+
+.shield-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.heart-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.paw-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.security-stamps h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.security-stamps p {
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin: 5px;
+}
+
+.shield-image img, .heart-image img, .paw-image img {
+    width: 50px;
+}
+
+/*Om verksamheten*/
+.about {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    align-items: center;
+    color: #1e3b8a;
+}
+
+.about h3 {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 30px;
+}
+
+.about img {
+    grid-column: 2;
+    grid-row: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+}
+
+.about p {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    background-color: rgba(119, 194, 255, 0.342);
+    color: #1E3A8A;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-size: 1.2em
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #1E3A8A;
+    font-size: 1.5em;
+}
+
+.footer-logo img {
+    height: 25px;
+    width: auto;
+}
+
+.footer-kontakt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-kontakt a {
+    text-decoration: none;
+    color: #1E3A8A;
+    margin-left: 10px;
+}
+
+.footer-lankar a {
+    text-decoration: none;
+    color: #1E3A8A;
+}
+
+.footer-lankar nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 8px;
+} 
+
+.footer-lankar ul {
+    margin-left: 10px;
+    padding-left: 0;
+}
+
+.footer-oppettider p {
+    margin-left: 10px;
+}
+
+footer .boka-button {
+    background-color: #FBBF24;
+    color: #1E3A8A;
+    text-decoration: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/*HUNDPENSIONATET HTML*/
+/*Första texten om hundpensionatet*/
+.background {
+    color: #1e3b8a;
+    background-image: url(../images/backgrounddog.avif);
+}
+
+/*Bildgalleriet*/
+.gallery-container {
+  position: relative;
+  color: #1E3A8A;
+  width: 100%; 
+  margin: auto;
+  overflow: hidden;
+}
+
+.gallery-slide img {
+  width: 100%;
+  height: auto;
+  display: none;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.gallery-slide img.active {
+  display: block;
+}
+
+/*Knapparna för galleriet*/
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 13px;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*KONTAKT HTML*/
+/*Formuläret*/
+.form-text {
+    color: #1E3A8A;
+}
+
+form {
+    padding: 20px;
+    color: black;
+    background-color: white;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+    
+legend {
+    font-size: 30px;
+    border-bottom: 3px solid black;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+input, textarea, select {
+    padding: 6px 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #1E3A8A;
+    box-shadow: 0 0 0 4px rgba(10, 53, 95, 0.253)
+}
+
+label {
+    display: block;
+    margin: 8px;
+}
+
+/*Röd text på errorlistan*/
+#errorList {
+    color: rgb(204, 93, 93);
+    font-weight: bold;
+}
+
+/*Grön text ifall formuläret kunde skickas*/
+#meddelandeTillUser {
+    color: green;
+    font-weight: bold;
+}
+
+/*Visning med en storskärm*/
+@media (min-width: 768px){
+    /*Gör innehållet som max 1400px så allt inte blir så utsmetat på en stor skärm*/
+    header, main, footer {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /*Header*/
+    /*Hamburgermenyn*/
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        width: auto;
+    }
+
+    .menu a {
+        border-bottom: none;
+    }
+
+    .menu ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    /*Navigeringsfältet längst upp på sidan*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5em;
+        background-color: rgba(119, 194, 255, 0.342);
+    }
+
+    header .header-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #1E3A8A;
+    }
+
+    .header-container img {
+        height: 40px;
+        width: auto;
+    }   
+
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    header nav ul a {
+        text-decoration: none;
+        color: #1E3A8A;
+    }
+
+    header nav ul a:hover {
+        color: grey;
+    }
+
+    .boka-button {
+        background-color: #FBBF24;
+        color: black;
+        text-decoration: none;
+        border-radius: 20px;
+        padding: 15px;
+        margin: 20px;
+} 
+
+    /*Hero*/
+    .hero {
+        position: absolute;
+        top: 30%;           
+        left: 20%;
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: rgba(172, 172, 172, 0.445);
+    }
+
+    /*Varför välja oss-sektion*/
+    .security-stamps {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(119, 194, 255, 0.342);
+
+    }
+
+    .security-stamps h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 5px;
+    }       
+
+    .security-stamps p {
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin: 5px;
+    }
+
+    .shield-image img, .heart-image img, .paw-image img {
+        width: 80px;
+    }
+
+    /*Om verksamheten*/
+    .about {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        align-items: center;
+        color: #1e3b8a;
+    }
+
+    .about h3 {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 30px;
+    }
+
+    .about img {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        width: 250px;
+        height: 250px;
+        border-radius: 30%;
+    }
+
+    .about p {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /*Footer*/
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        color: #1E3A8A;
+        font-size: 40px;
+    }
+
+    .footer-logo img {
+        height: 40px;
+        width: auto;
+    }
+
+    footer h5 {
+        margin-bottom: 15px;
+        font-size: 1.5em;
+    }
+
+    .footer-kontakt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-kontakt a {
+        text-decoration: none;
+        color: #1E3A8A;
+        margin-left: 10px;
+    }
+
+    .footer-lankar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-lankar a {
+        text-decoration: none;
+        color: #1E3A8A;
+    }
+
+    .footer nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-lankar nav ul {
+        list-style-type: none;
+        gap: 10px;
+        margin-top: 2px;
+    } 
+
+    .footer-oppettider p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .boka-button {
+        background-color: #FBBF24;
+        color: #1E3A8A;
+        text-decoration: none;
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    /*HUNDPENSIONATET HTML*/
+    /*Första texten på sidan med en bakgrundbild på en vovve*/
+    .background {
+        color: #1e3b8a;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.63), rgba(255, 255, 255, 0.466)),url(../images/backgrounddog.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 400px;
+    }
+
+    /*Bildgalleriet*/
+    .gallery-container {
+        color: #1E3A8A;
+        position: relative;
+        max-width: 1000px; 
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .gallery-slide img {
+        max-width: 1000px;
+        height: auto;
+        display: none;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    /*KONTAKT HTML*/
+    /*Formuläret*/
+    .form-text {
+        color: #1E3A8A;
+    }
+
+    form {
+        padding: 20px;
+        color: black;
+        max-width: 600px;
+        background-color: white;
+        margin: 0 auto;
+        border: 2px solid black;
+    }
+
+    input, textarea, select {
+        padding: 6px 12px;
+        border: 1px solid black;
+        font-size: 16px;
+    }
+
+    input:focus, textarea:focus, select:focus {
+        border-color: #1E3A8A;
+        box-shadow: 0 0 0 4px rgba(10, 53, 95, 0.253)
+    }
+
+    label {
+        display: block;
+        margin: 8px;
+    }
+}

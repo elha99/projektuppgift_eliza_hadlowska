@@ -6,28 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
+    <script src="js/hundpensionatet.js" defer></script>
     <title>Hotell Tass</title>
 </head>
 
 <body>
+    <!--Navigeringsfältet längst upp-->
     <header>
-        <img src="images/tass_logo.png" alt="Hotell Tass logo i form av en tass" width="100">
-        <h1>Hundpensionatet</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startsida</a></li>
-                <li><a href="hundpensionatet.html">Hundpensionatet</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <img src="images/tass_logo.png" alt="Hotell Tass logo i form av en tass">
+            <h1>Hotell Tass</h1>
+        </div>
+        <button class="menu-toggle">☰</button>
+        <nav class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="hundpensionatet.html">Hundpensionatet</a></li>
+                    <li><a href="kontakt.html" class="boka-button">Boka vistelse</a></li>
+                </ul>
+            </nav>
     </header>
-
+    <main>
+    <!--Information om hundpensionatet-->
     <section>
-
+        <div class="background">
+        <h2>Välkommen till vårt hundpensionat!</h2>
+        <p>
+            Hundpensionatet är beläget i de Jämtländska skogarna utanför Östersund. Familjetraditionen i det här 
+            hundpensionatet möter trygghet och kärlek till hundar. Vår historia sträcker sig så långt som 2005, 
+            då min mor och far grundade hundpensionatet med stark vision att skapa ett andra hem för hundar vars 
+            ägare reser bort under en kortare eller längre period. Det skulle vara ett hem fyllt av trygghet, glädje 
+            och omsorg så matte och/eller husse kunde slappna av och veta att deras bästa vän är i goda händer. 
+        </p>
+        <h3>Varför välja oss?</h3>
+        <p>
+            <ul>
+                <li><strong>Lång erfarenhet och djup kunskap:</strong> Vi har över 20 års erfarenhet av hundomvårdnad. 
+                    Över åren har vi träffat alla sorts hundar, från busiga valpar, aktiveringskrävande raser till lugna pensionärer.</li>
+                <li><strong>Lugn och hemmatrevlig miljö:</strong> Vi har satt en maxgräns på antal hundar vid samma tilfälle just för att
+                det ska vara ett mer personoligt hundpensionat som skapar tid för varje enskild individ och möter dess behov.</li>
+                <li><strong>Balans mellan aktivering och vila:</strong>Härliga skogspromenader, bus i stora rastgårdar och massvis med mys. 
+                Aktiviteterna är anpassade utefter din hunds ålder och energi.</li>
+                <li><strong>Högsta trygghet:</strong>Våra anläggningar är godkända, säkra och anpassade för att ge din hund den bästa vistelsen.</li>
+            </ul>
+        </p>
+        <p>
+            <strong>Du är varmt välkommen att boka ett besök för att titta på våra miljöer innan du bestämmer dig - vi längtar efter att lära känna dig och dín vovve!</strong> 
+        </p>
+        </div>
     </section>
-
+    <!--Bildgalleri-->
+    <section>
+        <div class="gallery-container">
+            <h2>Ett bildgalleri med våra besökare</h2>
+            <div class="gallery-slide">
+                <img src="images/dog_on_grass.avif" alt="Bild 1" class="active">
+                <img src="images/dog1.avif" alt="Bild 2">
+                <img src="images/dog2.avif" alt="Bild 3">
+                <img src="images/dog3.avif" alt="BIld 4">
+                <img src="images/dog4.avif" alt="Bild 5">
+                <img src="images/dog5.avif" alt="Bild 6">
+            </div>
+            <button id="prevBtn" class="prev-btn">Föregående</button>
+            <button id="nextBtn" class="next-btn">Nästa</button>
+        </div>
+    </section>
+    </main>
     <footer>
-
+        <!--Navigeringsfältet längst ner-->
+        <div class="footer-logo">
+            <img src="images/tass_logo.png" alt="Hotell Tass logo i form av en tass">
+                <h4>Hotell Tass</h4>
+        </div>
+        <div class="footer-container">
+            <div class="footer-kontakt">
+                <h5>Kontaktuppgifter</h5>
+                <a href="mailto:hotelltass@mail.com">hotelltass@mail.com</a>
+                <a href="tel:0701234567">0701234567</a>
+            </div>
+            <div class="footer-lankar">
+                <h5>Länkar</h5>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Startsida</a></li>
+                        <li><a href="hundpensionatet.html">Hundpensionatet</a></li>
+                        <li><a href="kontakt.html" class="boka-button">Boka vistelse</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-oppettider">
+                <h5>Öppettider</h5>
+                <p>Måndag-Fredag 7-18</p>
+                <p>Lördag-Söndag 10-16</p>
+            </div>
+        </div>
+        <p>&copy; 2026 Hotell Tass. Alla rättigheter förbehållna.</p>
     </footer>
 </body>
 </html>
