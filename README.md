@@ -6,7 +6,7 @@ så deras ägare kan slappna av på sin semester/arbetsresa.
 ## Tekniker
 Projektet är byggt med:  
 -HTML  
--CSS
+-CSS  
 -JavaScript
 
 ## Kontakt 
