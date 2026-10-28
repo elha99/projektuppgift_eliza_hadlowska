@@ -26,6 +26,7 @@ function onSubmit(event) {
   event.preventDefault();
 
 //Läsa in värden som skrivs in i fälten
+  const meddelande = document.querySelector("#meddelandeTillUser");  
   const dogName = dogNameInput.value.trim();
   const chipNumber = chipNumberInput.value.trim();
   const wishes = wishesInput.value.trim();
@@ -33,13 +34,17 @@ function onSubmit(event) {
   const email = emailInput.value.trim();
   const phone = phoneInput.value.trim();
 
+  //Rensa meddelandet till användaren
+  meddelande.innerHTML = "";
 
+//Om fälten i formuläret inte fyllts i korrekt ska det visas felmeddelanden
   if(!validateForm(dogName, chipNumber, wishes, humanName, email, phone)) {
     displayErrors();
-  } /* else {
-    //Skriv ut meddelande att det har skickats till användaren
+  } else {
+    //Skriv ut meddelande att det har skickats till användaren och rensa formuläret
+    meddelande.innerHTML = "Tack! Vi har mottagit ditt formulär"
     clearForm();
-  } */
+  }
 };
 
 //validera Formuläret
@@ -98,8 +103,8 @@ function validateForm(dogName, chipNumber, wishes, humanName, email, phone) {
     validate = false;
   }  
 
-  if (!terms.value) {
-    errors.push("Du måste godkänna villkoren, de står längst upp på sidan");
+  if (!terms.checked) {
+    errors.push("Du måste godkänna villkoren (du kan läsa de längst upp på sidan)");
     validate = false;
   }
 
@@ -114,6 +119,7 @@ function displayErrors() {
   if(errors.length > 0) {
     for(let i = 0; i < errors.length; i++) {
       const liEl = document.createElement("li");
+      liEl.innerHTML = errors[i];
       
       //li elementet kommer att ingå i ul errorList i kontakt HTML-filen
       errorList.appendChild(liEl);
@@ -121,9 +127,20 @@ function displayErrors() {
   }
 }
 
-/* function clearForm() {
+//Rensa formuläret
+function clearForm() {
     
     errors = [];
     errorList.innerHTML = "";
 
-} */
+    dogNameInput.value = "";
+    chipNumberInput.value = "";
+    lastVaccine.value = "";
+    checkIn.value = "";
+    checkOut.value = "";
+    wishesInput.value = "";
+    humanNameInput.value = "";
+    emailInput.value = "";
+    phoneInput.value = "";
+    terms.checked = false;
+}

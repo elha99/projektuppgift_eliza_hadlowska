@@ -317,14 +317,21 @@ label {
     margin: 8px;
 }
 
+/*Röd text på errorlistan*/
 #errorList {
-    color: red;
+    color: rgb(204, 93, 93);
+    font-weight: bold;
+}
+
+/*Grön text ifall formuläret kunde skickas*/
+#meddelandeTillUser {
+    color: green;
     font-weight: bold;
 }
 
 /*Visning med en storskärm*/
 @media (min-width: 768px){
-    /*Gör innehållet lite mindre än skärmen så allt inte blir så utsmetat*/
+    /*Gör innehållet som max 1400px så allt inte blir så utsmetat på en stor skärm*/
     header, main, footer {
         max-width: 1400px;
         margin: 0 auto;
