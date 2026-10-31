@@ -317,6 +317,10 @@ label {
     margin: 8px;
 }
 
+h3, p {
+    color: #1E3A8A;
+}
+
 /*Röd text på errorlistan*/
 #errorList {
     color: rgb(204, 93, 93);
